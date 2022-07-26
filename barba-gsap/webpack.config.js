@@ -80,7 +80,7 @@ module.exports = (env, argv) => ({
     ],
     watchContentBase: true,
     compress: true,
-    port: 9000,
+    port: 9009,
     open: true,
   },
 });
