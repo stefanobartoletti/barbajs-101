@@ -28,10 +28,20 @@ barba.init({
       afterOnce() {
         console.log('afterOnce');
       },
-    }, {
+    },
+    {
       name: 'fade',
       to: {
         namespace: ['fade'],
+      },
+      leave() {},
+      enter() {},
+    },
+    {
+      name: 'clip',
+      sync: true,
+      to: {
+        namespace: ['clip'],
       },
       leave() {},
       enter() {},
