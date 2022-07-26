@@ -13,3 +13,30 @@
 }
 
 /* Slide to home */
+
+.home-leave {
+  transform: translateX(0);
+}
+
+.home-leave-active {
+  transition: all 1s ease-in-out;
+}
+
+.home-leave-to {
+  transform: translateX(-100%);
+}
+
+.home-enter {
+  transform: translateX(100%);
+}
+
+.home-enter-active {
+  transition: all 1s ease-in-out;
+}
+
+.home-enter-to {
+  transform: translateX(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

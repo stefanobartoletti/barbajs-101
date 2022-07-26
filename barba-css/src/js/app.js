@@ -17,17 +17,13 @@ barba.init({
   transitions: [
     {
       name: 'home',
-      beforeOnce() {
-        console.log('beforeOnce');
+      to: {
+        namespace: ['home'],
       },
-      once() {
-
-        // When using CSS plugin, this is not run
-        console.log('once');
-      },
-      afterOnce() {
-        console.log('afterOnce');
-      },
+      sync: true,
+      once() { },
+      leave() {},
+      enter() {},
     },
     {
       name: 'fade',
