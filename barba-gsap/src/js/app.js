@@ -13,6 +13,14 @@ barba.hooks.enter(() => {
 });
 
 barba.init({
+  views: [
+    {
+      namespace: 'architecture',
+      beforeEnter(data) {
+        console.log(data, 'entering architecture');
+      },
+    },
+  ],
   transitions: [
     {
       name: 'detail',
