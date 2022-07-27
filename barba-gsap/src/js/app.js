@@ -8,6 +8,10 @@ const resetActiveLink = () => gsap.set('a.is-active span', {
   transformOrigin: 'left',
 });
 
+barba.hooks.enter(() => {
+  window.scrollTo(0, 0);
+});
+
 barba.init({
   transitions: [
     {
@@ -52,9 +56,9 @@ barba.init({
           yPercent: 100,
           stagger: 0.2,
           ease: 'power1.out',
-          
+
         });
-        animationEnter(next.container)
+        animationEnter(next.container);
       },
     },
 
